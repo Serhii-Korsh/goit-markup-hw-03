@@ -15,6 +15,39 @@ ul a {
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/*------header------*/
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: inline-flex;
+  padding-left: 156px;
 }
 
 .logo {
@@ -29,6 +62,12 @@ ul {
 
 .logo-web {
   color: #2e2f42;
+}
+
+.top-panel {
+  gap: 40px;
+  margin-left: 76px;
+  display: inline-flex;
 }
 
 .link-bar {
@@ -50,6 +89,17 @@ ul {
 .heder-address {
   font-style: normal;
 }
+
+.list-address {
+  display: inline-flex;
+  gap: 40px;
+}
+
+.header-container {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
 .address-mail {
   font-weight: 400;
   font-size: 16px;
@@ -65,8 +115,15 @@ ul {
   color: #404bbf;
 }
 
+/*-----main-----*/
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .section-one {
   background: #2e2f42;
+  height: 600px;
 }
 
 .headline {
@@ -76,17 +133,28 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  width: 496px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 68px;
 }
 
 .section-one-btn {
+  display: flex;
+  align-items: flex-start;
   justify-content: flex-start;
-  background-color: #4d5ae5;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #4d5ae5;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #fff;
+  margin: 0 auto;
+  margin-top: 48px;
 }
 
 .section-one-btn:hover {
@@ -95,6 +163,38 @@ ul {
 
 .section-one-btn:focus {
   background-color: #404bbf;
+}
+
+.section-two {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.ul-section-two {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.li-section-two {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 264px;
+  height: 104px;
 }
 
 .section-three {
@@ -109,10 +209,27 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.section-three-ul {
+  display: inline-flex;
+  gap: 23px;
 }
 
 .section-three-li {
   background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 265px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .headline-four {
@@ -123,6 +240,7 @@ ul {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .team-portfolio {
@@ -131,6 +249,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
+  padding-left: 16px;
 }
 
 .title-advantages {
@@ -173,10 +293,36 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  padding-left: 16px;
 }
+
+.section-four-li {
+  border: 1px solid #e7e9fc;
+  width: 360px;
+  height: 420px;
+  background: #fff;
+}
+
+.section-four-ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+/*-----footer-----*/
 
 .foot {
   background: #2e2f42;
+  height: 312px;
+}
+
+.container-footer {
+  width: 264px;
+  height: 112px;
+  padding-top: 100px;
+  margin-left: 156px;
 }
 
 .logo-web-footer {
@@ -189,4 +335,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
+  height: 72px;
+  margin-top: 16px;
 }

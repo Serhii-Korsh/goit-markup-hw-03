@@ -33,8 +33,9 @@ h6 {
 
 .container {
   width: 1158px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 img {
@@ -51,7 +52,6 @@ img {
 
 .header-container {
   display: flex;
-  padding-left: 156px;
 }
 
 .logo {

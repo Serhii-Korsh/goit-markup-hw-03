@@ -45,6 +45,7 @@ img {
 /*------header------*/
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -305,6 +306,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .section-four-li {
@@ -332,9 +334,6 @@ img {
   background: #2e2f42;
   padding: 100px 0;
   height: 312px;
-}
-
-.container-footer {
 }
 
 .logo-footer {
